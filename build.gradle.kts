@@ -1,7 +1,7 @@
 buildscript {
-	val springBootVersion = "1.4.2.RELEASE"
-	val kotlinVersion = "1.0.5-2"
-	extra["kotlinVersion"] = kotlinVersion
+	ext.springBootVersion = "1.4.2.RELEASE"
+	ext.kotlinVersion = "1.0.5-2"
+//	extra["kotlinVersion"] = kotlinVersion
 
 	repositories {
 		mavenCentral()
@@ -20,16 +20,16 @@ apply {
 
 version = "0.0.1-SNAPSHOT"
 
-configure<JavaPluginConvention> {
-	setSourceCompatibility(1.8)
-	setTargetCompatibility(1.8)
-}
+//configure<JavaPluginConvention> {
+//	setSourceCompatibility(1.8)
+//	setTargetCompatibility(1.8)
+//}
 
 repositories {
 	mavenCentral()
 }
 
-val kotlinVersion = extra["kotlinVersion"] as String
+//val kotlinVersion = extra["kotlinVersion"] as String
 
 dependencies {
 	compile("org.springframework.boot:spring-boot-starter-web")
