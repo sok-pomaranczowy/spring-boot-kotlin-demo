@@ -13,3 +13,5 @@ configure the EAP update site in:
 Tools -> Kotlin -> Configure Kotlin Plugin Updates -> Early Access Preview 1.1
 
 This project is Apache 2.0 licensed.
+
+My fork fiexed some problems that I had with running this application using gradle.
